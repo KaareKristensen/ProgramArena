@@ -10,32 +10,51 @@ programming.
 
 ### Build
 
+Either using Docker
+
 ```bash
 docker build -t programarena:latest .
+```
+
+or using docker-compose
+
+```bash
+docker-compose build
 ```
 
 ### Running
 
 #### Using Docker
 
+Either using Docker
+
 ```bash
 docker run -d --name programarena -p 80:80 programarena
 ```
 
-ProgramArena will be running at [localhost](localhost)
+or using docker-compose
+
+```bash
+docker-compose up
+```
+
+ProgramArena will be running at `localhost`
 
 #### Using uvicorn
+
+When developing running uvicorn will hotload new changes directly to the server.
 
 ```bash
 uvicorn programarena.serve:app --reload
 ```
 
-ProgramArena will be running at [localhost:8000](localhost:8000)
+ProgramArena will be running at `localhost:8000` if using the standard port
+provided from uvicorn.
 
 ## API documentation
 
-The documentation for every endpoints is created through swagger and can be
-found by navigating to `/docs`. Through swagger it is also possible to try out
+The documentation for every endpoints is created through OpenAPI and can be
+found by navigating to `/redoc` endpoint. Through OpenAPI it is also possible to try out
 all the endpoints.
 
 

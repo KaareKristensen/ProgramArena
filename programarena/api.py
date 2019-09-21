@@ -3,6 +3,7 @@ import logging
 from fastapi import FastAPI
 
 from .routers import healths, games, roots
+from .core import settings
 
 LOGGER = logging.getLogger(__name__)
 
@@ -15,7 +16,9 @@ def create_app():
     """
 
     app = FastAPI(
-        title="ProgramArena"
+        title=settings.PROJECT_NAME,
+        docs_url=None,
+        openapi_url="/api/v1/openapi.json",
     )
 
     app.include_router(
