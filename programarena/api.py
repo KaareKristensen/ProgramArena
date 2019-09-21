@@ -17,7 +17,6 @@ def create_app():
 
     app = FastAPI(
         title=settings.PROJECT_NAME,
-        docs_url=None,
         openapi_url="/api/v1/openapi.json",
     )
 
