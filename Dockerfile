@@ -5,10 +5,10 @@ EXPOSE 80
 
 RUN pip install fastapi uvicorn
 
-COPY ./app /app
+COPY ./ / 
 
 COPY ./requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 WORKDIR ./
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "programarena.serve:app", "--host", "0.0.0.0", "--port", "80"]
