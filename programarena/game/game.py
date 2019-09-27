@@ -15,6 +15,12 @@ class Game:
         players = [[0] * height for i in range(width)]
         return board, players
 
+    def get_board(self):
+        return self.__board
+
+    def get_players(self):
+        return self.__players
+
     def spawn_player(self, player_name: str):
         postion = (randint(0, self.__height),
                    randint(0, self.__width))
