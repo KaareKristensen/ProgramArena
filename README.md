@@ -62,3 +62,20 @@ all the endpoints.
 
 Every team creates a `player` and by using the API of the server, creates a
 program which uses the different endpoints for moves.
+
+### Turn logic
+
+Turn routine:
+
+1. All units make thier move.
+2. Units that have chosen to either defend or heal does their action.
+3. Units that have chosen to attack, attacks.
+
+### Attack logic
+
+#### Mage
+
+The mage has one attack. The attack is chosen in a direction from the unit. The attack works in a beam-like fashion.
+A attack happens in all the fields in on direction from the unit, and the directions is like a queens movement in chess.
+The attack does not have a knockback on hit.
+An attack does 3 damage on-hit.
