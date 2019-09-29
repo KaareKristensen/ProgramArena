@@ -25,3 +25,13 @@ Each round a unit can move 1 field, and can choose to move in any direction. if 
 ## World
 The world size scales depending on the number of players. If a unit is going out of bounds the action will deal one health and place the unit back on the former field.
 The world is made as a grid, with only one unit on any field at any time. All fields are legal to move to.
+
+## Turn
+Each turn there is 3 phases.
+Each unit can choose to move 1 time each round.
+Each unit can choose between one of the 3 actions, attack, heal or defend, each round.
+
+### Round structure
+1. All units perform their move.
+2. The units that have chosen either heal or defend, do the action they have chosen.
+3. The units that have chosen attack, attacks.
