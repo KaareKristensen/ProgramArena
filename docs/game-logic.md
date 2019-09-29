@@ -4,7 +4,7 @@ The different rules and attributes connected to the game
 
 ## Unit
 
-A unit has 3 actions to choose between attack, defend and heal. A unit can move. 
+A unit has 3 actions to choose between attack, defend and heal. A unit can move.
 
 ### Attack
 
@@ -23,7 +23,5 @@ Heals the unit for 1 hp.
 Each round a unit can move 1 field, and can choose to move in any direction. if 2 units move to the same field, they will "bounce" off eachother, and lose one health each.
 
 ## World
-The world size scales depending on the number of players. If a unit is going out of bounds the action will deal one health and place the unit back on the former field. 
+The world size scales depending on the number of players. If a unit is going out of bounds the action will deal one health and place the unit back on the former field.
 The world is made as a grid, with only one unit on any field at any time. All fields are legal to move to.
-
-
